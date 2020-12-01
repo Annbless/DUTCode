@@ -1,4 +1,4 @@
-<h1 align="left">DUT: Learning Video Stabilization by Simply Watching Unstable Videos <a href=""><img  src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg" ></a> <a href="https://colab.research.google.com/drive/1i-cK-6uFKbWRjxF26uxUqHHSEvq1Ln8h?usp=sharing">
+<h1 align="left">DUT: Learning Video Stabilization by Simply Watching Unstable Videos <a href="https://arxiv.org/pdf/2011.14574.pdf"><img  src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg" ></a> <a href="https://colab.research.google.com/drive/1i-cK-6uFKbWRjxF26uxUqHHSEvq1Ln8h?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a> </h1> 
 
@@ -14,7 +14,7 @@
 
 ## Introduction
 
-<p align="justify">This repository contains the code, models, test results for the paper <a href="">DUT: Learning Video Stabilization by Simply Watching Unstable Videos</a>. It contains a keypoint detetcion module for robust keypoint detection, a motion propagation module for grid-based trajectories estimation, and a trajectory smoothing module for dynamic trajectory smoothing. The DUT model is totally unsupervised and just need unstable videos for training.
+<p align="justify">This repository contains the code, models, test results for the paper <a href="https://arxiv.org/pdf/2011.14574.pdf">DUT: Learning Video Stabilization by Simply Watching Unstable Videos</a>. It contains a keypoint detetcion module for robust keypoint detection, a motion propagation module for grid-based trajectories estimation, and a trajectory smoothing module for dynamic trajectory smoothing. The DUT model is totally unsupervised and just need unstable videos for training.
 
 <p align="justify">We have released the inference code, a pretrained model, which can be found in section <a href="#inference-code"><i>inference code</i></a> for more details. The inference code for DIFRINT and StabNet are also included in this repo.</p>
 
