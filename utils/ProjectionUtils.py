@@ -128,10 +128,12 @@ def HomoProj(homo, pts):
     pts_location_y = (pts[:, 1:2] // cfg.MODEL.PIXELS).long()
 
     # if the grid is outside of the image
-    index = (pts_location_x[:, 0] >= 39).nonzero().long()
-    pts_location_x[index, :] = 38
-    index = (pts_location_y[:, 0] >= 29).nonzero().long()
-    pts_location_y[index, :] = 28
+    maxWidth = cfg.MODEL.WIDTH // cfg.MODEL.PIXELS - 1
+    maxHeight = cfg.MODEL.HEIGHT // cfg.MODEL.PIXELS - 1
+    index = (pts_location_x[:, 0] >= maxWidth).nonzero().long()
+    pts_location_x[index, :] = maxWidth - 1
+    index = (pts_location_y[:, 0] >= maxHeight).nonzero().long()
+    pts_location_y[index, :] = maxHeight - 1
 
     homo = homo.to(pts.device)
 
